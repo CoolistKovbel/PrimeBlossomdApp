@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { ethers } from "ethers";
+import { swapToken } from "../lib/web3";
 
 const SimpleSwapPage = () => {
   const [ETHAmount, setETHAmount] = useState<any>("");
@@ -26,6 +27,8 @@ const SimpleSwapPage = () => {
 
     try {
       console.log("swapping tokens");
+
+      await swapToken(ETHAmount)
 
       
     } catch (error) {

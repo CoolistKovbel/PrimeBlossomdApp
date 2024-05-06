@@ -1,5 +1,6 @@
 "use client"
 
+import { mintNFT } from '@/app/lib/web3'
 import Image from 'next/image'
 import React from 'react'
 
@@ -8,8 +9,7 @@ const NFT = () => {
   const handleMint = async (e:any) => {
     e.preventDefault()
     try {
-      console.log("handle mint", e.target)
-      
+      mintNFT(e.target.nftAmount.value)
     } catch (error) {
       console.log(error)
     }
