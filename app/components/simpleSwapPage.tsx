@@ -28,9 +28,7 @@ const SimpleSwapPage = () => {
     try {
       console.log("swapping tokens");
 
-      await swapToken(ETHAmount)
-
-      
+      await swapToken(ETHAmount);
     } catch (error) {
       console.log(error);
     }
@@ -38,9 +36,7 @@ const SimpleSwapPage = () => {
 
   return (
     <div className="w-full md:w-[80%] mx-auto p-4 bg-[#444] drop-shadow-lg rounded-md ">
-
       <header className="mb-4">
-
         <div className="flex items-center justify-between w-full">
           <h2 className="text-4xl font-bold mb-2">Token Swap</h2>
           <Link
@@ -51,10 +47,9 @@ const SimpleSwapPage = () => {
           </Link>
         </div>
         <p className="text-gray-300 p-2">
-          Convert your Native ETH token for our special SunlightToken for a better
-          price then the market. Gets your now hodl or grow
+          Convert your Native ETH token for our special SunlightToken for a
+          better price then the market. Gets your now hodl or grow
         </p>
-
       </header>
 
       {/* Swap form */}
@@ -62,7 +57,6 @@ const SimpleSwapPage = () => {
         className="p-4 flex flex-col bg-[#222] rounded-md drop-shadow-lg gap-4 "
         onSubmit={handleSwap}
       >
-
         <label htmlFor="ETH" className="flex flex-col gap-2">
           <span className="bg-[#111] p-4 inline-block rounded-lg">
             Ethereum
@@ -85,7 +79,7 @@ const SimpleSwapPage = () => {
 
         <label htmlFor="SLT" className="flex flex-col gap-2 ">
           <span className="bg-[#111] p-4 inline-block rounded-lg">
-          Sunlight Token 
+            Blossom Dust Token
           </span>
           <input
             type="number"
@@ -100,9 +94,7 @@ const SimpleSwapPage = () => {
         <button className="p-2 bg-[#999] rounded-lg font-bold uppercase hover:bg-[#444]">
           swap
         </button>
-
       </form>
-
     </div>
   );
 };

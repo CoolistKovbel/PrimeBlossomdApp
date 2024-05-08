@@ -9,15 +9,16 @@ const Hero = () => {
           Prime Blossom Vault
         </h2>
         <p className="text-sm text-md">
-          A wonderful time to start minting a nft before the summer sun kisses
-          us with it ultra voilet rays. Hope you dont just stay to smell the
-          flowers but also mint some tokens too.
+          Looking to do something this summer? You come to the right place. With
+          many new things coming and everything is everywhere it may be hard to
+          get things going again. Here at Prime Blossom vault we want to be able
+          to have you blossom and allow others learn too.
         </p>
       </div>
 
       <div className="w-[200px] h-[200px] relative">
         <Image
-          src="/PamerPosyw.png"
+          src="/13.png"
           alt="nft-image"
           fill
           className="drop-shadow-lg rounded-lg"
