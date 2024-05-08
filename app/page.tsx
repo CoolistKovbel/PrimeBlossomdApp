@@ -16,8 +16,7 @@ export default function Home() {
       {/* Token */}
       <Token />
 
-      {/* footer */}
-      <FooterMain />
+
 
     </main>
   );

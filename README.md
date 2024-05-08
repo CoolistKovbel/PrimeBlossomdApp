@@ -6,8 +6,16 @@ In the future there will be a small partnership coming along, be advised to inve
 
 This dApp features
 
-- NFT mint - PamerPosy
-- Token mint - SunLightToken
+- NFT mint - PrimeElectricPlant
+- Token mint - PlantFoodPalets
 - NFT & token stake
 
 There will be another dApp coming soon be sure to hold your nfts it may work for the next one. maybe not.
+
+<---
+
+Token ERC-721: TestNet:
+token erc-721: Mainnet:
+
+Token ERC-20: TestNet:
+token erc-20: Mainnet:

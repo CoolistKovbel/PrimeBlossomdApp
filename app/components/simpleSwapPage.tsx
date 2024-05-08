@@ -83,14 +83,14 @@ const SimpleSwapPage = () => {
 
         <i className="text-[4rem] p-2 mx-auto cursor-pointer">🔄</i>
 
-        <label htmlFor="NCT" className="flex flex-col gap-2 ">
+        <label htmlFor="SLT" className="flex flex-col gap-2 ">
           <span className="bg-[#111] p-4 inline-block rounded-lg">
-            NeruoClumpToken
+          Sunlight Token 
           </span>
           <input
             type="number"
-            id="NCT"
-            name="NCT"
+            id="SLT"
+            name="SLT"
             value={NCTAmount}
             disabled
             className="bg-[#111] p-2 text-white drop-shadow-lg rounded-md text-white font-mono"

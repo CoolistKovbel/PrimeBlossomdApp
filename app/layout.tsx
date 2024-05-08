@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { inter } from "./components/ui/font";
 
 import "./globals.css";
+import FooterMain from "./components/footer";
 
 export const metadata: Metadata = {
   title: "PrimeBlossomVault",
@@ -15,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <FooterMain />
+      </body>
     </html>
   );
 }
