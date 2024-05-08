@@ -105,7 +105,7 @@ const SimpleSwapPage = () => {
             placeholder="enter amount"
             step="0.00001"
             min="0.00015"
-            max="1000000"
+            max="30000"
             value={ETHAmount}
             onChange={handleETHChange}
             className="bg-[#111] p-2 text-white drop-shadow-lg rounded-md text-white font-mono"
