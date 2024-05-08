@@ -79,6 +79,7 @@ export const swapToken = async (_amount: any) => {
     const amountInWei = ethers.utils.parseEther(_amount.toString());
 
     const provider = new ethers.providers.Web3Provider(window.ethereum);
+    
     // Get the signer
     const signer = provider.getSigner();
 
