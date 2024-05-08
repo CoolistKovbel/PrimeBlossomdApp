@@ -17,9 +17,10 @@ const NFT = () => {
   };
 
   return (
-    <div className="bg-[#111] p-10 flex items-center justify-center w-full ">
-      <div className="w-[45%]">
-        <h2 className="text-3xl font-bold mb-2">Prime Blossom Plant</h2>
+    <div className="bg-[#111] p-10 flex items-center justify-center w-full flex-col md:flex-col gap-4">
+
+      <div className="w-full md:w-[45%]">
+        <h2 className="text-3xl font-bold mb-2 text-center md:text-left">Prime Blossom Plant</h2>
         <p className="text-sm">
           This Prime Blossom Plant is a token of 222 other unquie generations.
           If you decide to mint you will be able to earn rewards from staking.
@@ -28,8 +29,8 @@ const NFT = () => {
         </p>
       </div>
 
-      <div className="w-[30%] text-center flex flex-col items-center justify-center gap-4 bg-[#111]">
-        <h2 className="text-2xl font-bold mb-2">PamerPosy Collection</h2>
+      <div className=" w-full md:w-[30%] text-center flex flex-col items-center justify-center gap-4 bg-[#111]">
+        <h2 className="text-2xl font-bold mb-2">Prime Blossom Plant</h2>
 
         <div className="w-[200px] h-[200px] relative">
           <Image
@@ -54,6 +55,7 @@ const NFT = () => {
           <button className="p-2 bg-[#222] rounded-lg">submit</button>
         </form>
       </div>
+
     </div>
   );
 };

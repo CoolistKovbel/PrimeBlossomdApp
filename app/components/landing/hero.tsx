@@ -3,9 +3,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bg-[#111] p-10 flex items-center justify-around drop-shadow-lg rounded-lg">
-      <div className="w-[45%]">
-        <h2 className="text-3xl md:text-5xl font-bold mb-2">
+    <div className="bg-[#111] p-10 flex items-center justify-around drop-shadow-lg rounded-lg md:flex-row flex-col">
+
+      
+      <div className="w-full w-[45%] mb-3">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center md:text-left">
           Prime Blossom Vault
         </h2>
         <p className="text-sm text-md">
@@ -24,6 +26,9 @@ const Hero = () => {
           className="drop-shadow-lg rounded-lg"
         />
       </div>
+
+
+
     </div>
   );
 };

@@ -5,7 +5,7 @@ import tokenAbs from "./abs.json";
 export const contractTokenContract =
   "0xDA9d107dEa05318194100B8780b03EbDcC5D1E78";
 export const ContractNFTCollection =
-  "0x50227021f746AFEc12b167a7c520a1Fe1938dAff";
+  "0xA4dA441ad248C2990866666eF4a90FDA82D562Fd";
 
 export const getEthereumObject = () => {
   return typeof window !== "undefined" ? window.ethereum : null;
@@ -40,8 +40,12 @@ export const getEthereumAccount = async () => {
 
 export const mintNFT = async (_amount: any) => {
   try {
-    console.log("minting nft");
-    const amountInWei = ethers.utils.parseEther(_amount.toString());
+    console.log("minting nft", _amount);
+
+    const amountInWei = ethers.utils.parseEther(_amount.toString())
+
+    console.log("amountInWei", ethers.utils.formatEther(ethers.BigNumber.from(amountInWei).mul(ethers.utils.parseEther("0.0210"))));
+
 
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     // Get the signer
@@ -56,8 +60,10 @@ export const mintNFT = async (_amount: any) => {
 
     await contractInstance.mint(_amount, {
       value: amountInWei,
-      gasLimit: 600000,
+      gasLimit: 300000,
     });
+
+
   } catch (error) {
     console.log(error);
   }
