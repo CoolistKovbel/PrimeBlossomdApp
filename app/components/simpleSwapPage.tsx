@@ -7,8 +7,8 @@ import { swapToken } from "../lib/web3";
 
 const SimpleSwapPage = () => {
   const [ETHAmount, setETHAmount] = useState<any>("");
-  const [NCTAmount, setNCTAmount] = useState<any>("");
-  const tokenPerEth = 100;
+  const [BDTAmount, setBDTAmount] = useState<any>("");
+  const tokenPerEth = 10000;
 
   // Function to handle ETH amount change
   const handleETHChange = (e: any) => {
@@ -19,7 +19,7 @@ const SimpleSwapPage = () => {
     const calculatedNCTAmount =
       Number(ethers.utils.parseEther(amount.toString())) * tokenPerEth;
 
-    setNCTAmount(ethers.utils.formatEther(calculatedNCTAmount.toString()));
+    setBDTAmount(ethers.utils.formatEther(calculatedNCTAmount.toString()));
   };
 
   const handleSwap = async (e: any) => {
@@ -33,6 +33,43 @@ const SimpleSwapPage = () => {
       console.log(error);
     }
   };
+
+  const userStakedAmount = 100; // Assuming the user has staked 100 tokens
+  const desiredTokens = 105;
+
+  // Function to calculate the time required to earn a certain number of tokens
+  function calculateTimeToEarnTokens(
+    userStakedAmount: number,
+    desiredTokens: number
+  ) {
+    // Constants
+    const annualInterestRate = 5; // 5% annual interest rate
+    const secondsInYear = 31536000; // Number of seconds in a year
+
+    // Get the current timestamp
+    const currentTimestamp = Math.floor(Date.now() / 1000);
+
+    // Calculate the time duration (in seconds) required to earn the desired tokens
+    const requiredRewards = desiredTokens - userStakedAmount; // Calculate the required additional rewards
+    const requiredTimeSeconds =
+      (requiredRewards * secondsInYear) /
+      (userStakedAmount * annualInterestRate);
+
+    // Calculate the estimated time to earn the desired tokens (in days)
+    const requiredTimeDays = requiredTimeSeconds / (60 * 60 * 24); // Convert seconds to days
+
+    return requiredTimeDays;
+  }
+
+  const timeToEarnTokens = calculateTimeToEarnTokens(
+    userStakedAmount,
+    desiredTokens
+  );
+  console.log(
+    "Time required to earn additional tokens:",
+    timeToEarnTokens,
+    "days"
+  );
 
   return (
     <div className="w-full md:w-[80%] mx-auto p-4 bg-[#444] drop-shadow-lg rounded-md ">
@@ -85,7 +122,7 @@ const SimpleSwapPage = () => {
             type="number"
             id="SLT"
             name="SLT"
-            value={NCTAmount}
+            value={BDTAmount}
             disabled
             className="bg-[#111] p-2 text-white drop-shadow-lg rounded-md text-white font-mono"
           />

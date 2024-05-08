@@ -2,10 +2,13 @@ import { ethers } from "ethers";
 import dApp from "./nftcontract.json";
 import tokenAbs from "./abs.json";
 
+// ÷test
 export const contractTokenContract =
-  "0xDA9d107dEa05318194100B8780b03EbDcC5D1E78";
+  "0xfDafC18c6BeF2F153f5D0F14fdF8f0B8edc19b04";
+
+  // test
 export const ContractNFTCollection =
-  "0xA4dA441ad248C2990866666eF4a90FDA82D562Fd";
+  "0xEb8556C96e176cA3458184AEA79933be154d64a2";
 
 export const getEthereumObject = () => {
   return typeof window !== "undefined" ? window.ethereum : null;
@@ -40,11 +43,11 @@ export const getEthereumAccount = async () => {
 
 export const mintNFT = async (_amount: any) => {
   try {
-    console.log("minting nft", _amount);
+    console.log("minting nft", _amount)
 
-    const amountInWei = ethers.utils.parseEther(_amount.toString())
+    const amountInWei =  ethers.utils.parseEther((0.0210 * _amount).toString())
 
-    console.log("amountInWei", ethers.utils.formatEther(ethers.BigNumber.from(amountInWei).mul(ethers.utils.parseEther("0.0210"))));
+    console.log("amountInWei", amountInWei);
 
 
     const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -81,7 +84,7 @@ export const swapToken = async (_amount: any) => {
 
     // Contract main
     const contractInstance = new ethers.Contract(
-      ContractNFTCollection,
+      contractTokenContract,
       tokenAbs,
       signer
     );

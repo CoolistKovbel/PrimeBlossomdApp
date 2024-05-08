@@ -17,7 +17,7 @@ const NFT = () => {
   };
 
   return (
-    <div className="bg-[#111] p-10 flex items-center justify-center w-full flex-col md:flex-col gap-4">
+    <div className="bg-[#111] p-10 flex items-center justify-center w-full flex-col md:flex-row gap-4">
 
       <div className="w-full md:w-[45%]">
         <h2 className="text-3xl font-bold mb-2 text-center md:text-left">Prime Blossom Plant</h2>
