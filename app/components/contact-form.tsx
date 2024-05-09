@@ -1,30 +1,30 @@
 "use client";
 
-import { ContactEmail } from "@/app/lib/action";
+// import { ContactEmail } from "@/app/lib/action";
 import { useFormState } from "react-dom";
 
 const ContactForm = () => {
 
-  const CreateBlogPostWithId = ContactEmail.bind(null, "12");
-  const [state, dispatch] = useFormState(CreateBlogPostWithId, undefined);
+  // const CreateBlogPostWithId = ContactEmail.bind(null, "12");
+  // const [state, dispatch] = useFormState(CreateBlogPostWithId, undefined);
 
-  const send = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  // const send = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
 
-    const formData = new FormData(e.currentTarget);
+  //   const formData = new FormData(e.currentTarget);
 
-    try {
-      dispatch(formData);
+  //   try {
+  //     dispatch(formData);
 
-    } catch (error) {
-      console.error("Error:", error);
-    } finally {
-        e.currentTarget.reset();
-    }
-  };
+  //   } catch (error) {
+  //     console.error("Error:", error);
+  //   } finally {
+  //       e.currentTarget.reset();
+  //   }
+  // };
 
   return (
-    <form className="mb-8" onSubmit={send}>
+    <form className="mb-8">
       <div className="mb-4">
         <label htmlFor="name" className="block text-gray-400 text-sm mb-2 ">
           Name:
@@ -64,13 +64,13 @@ const ContactForm = () => {
         Send Message
       </button>
 
-      {state && (
+      {/* {state && (
         <>
           <p className="text-sm text-yellow-500  text-center space-y-4">
             {state.message}
           </p>
         </>
-      )}
+      )} */}
     </form>
   );
 };
