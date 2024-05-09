@@ -8,20 +8,20 @@ const Token = () => {
 
       <div className="flex items-center justify-center w-full flex-row-reverse gap-10 mb-10 flex-col">
 
-        <div className="w-full md:w-[45%]">
+        <div className="w-full md:w-[65%]">
 
-          <h2 className="text-3xl text-5xl font-bold mb-2">
-            Prime Blossom Token
+          <h2 className="text-3xl text-5xl font-bold mb-2 text-center">
+            Prime Blossom Pollen Token
           </h2>
 
           <p className="text-sm">
-            The Prime Blossom Token is a token in which a user a can use to
-            purchase items as well as setup for staking
+            The Pollen Token is a token in which a user a can use to
+            purchase items as well as setup for staking. You will be able to use it within the dApp and at our stores.
           </p>
 
         </div>
 
-        <div className="w-full md:w-[20%] text-center flex flex-col items-center justify-center gap-4 bg-[#222] p-4 rounded-lg">
+        <div className="w-full md:w-[50%] text-center flex flex-col items-center justify-center gap-4 bg-[#222] p-4 rounded-lg">
           <h2 className="text-2xl font-bold mb-2">Blossom Dust Token </h2>
 
           <div className="w-[200px] h-[200px] relative">

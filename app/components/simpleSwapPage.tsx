@@ -84,8 +84,7 @@ const SimpleSwapPage = () => {
           </Link>
         </div>
         <p className="text-gray-300 p-2">
-          Convert your Native ETH token for our special SunlightToken for a
-          better price then the market. Gets your now hodl or grow
+          Convert your Native ETH token for our special Blossom Pollen Token
         </p>
       </header>
 
@@ -116,7 +115,7 @@ const SimpleSwapPage = () => {
 
         <label htmlFor="SLT" className="flex flex-col gap-2 ">
           <span className="bg-[#111] p-4 inline-block rounded-lg">
-            Blossom Dust Token
+            Blossom Pollen Token
           </span>
           <input
             type="number"
