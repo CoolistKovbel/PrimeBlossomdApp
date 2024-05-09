@@ -2,7 +2,6 @@
 import Hero from "./components/landing/hero";
 import NFT from "./components/landing/NFT";
 import Token from "./components/landing/Token";
-import FooterMain from "./components/footer";
 
 export default function Home() {
   return (
@@ -16,8 +15,6 @@ export default function Home() {
 
       {/* Token */}
       <Token />
-
-
 
     </main>
   );

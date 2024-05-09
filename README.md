@@ -18,6 +18,7 @@ Token ERC-721: TestNet:
 address: 0xA4dA441ad248C2990866666eF4a90FDA82D562Fd
 token erc-721: Mainnet:
 
+
 Token ERC-20: TestNet:
 address: 0xfDafC18c6BeF2F153f5D0F14fdF8f0B8edc19b04
 token erc-20: Mainnet:
