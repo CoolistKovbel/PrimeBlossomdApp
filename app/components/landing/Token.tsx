@@ -22,7 +22,7 @@ const Token = () => {
         </div>
 
         <div className="w-full md:w-[50%] text-center flex flex-col items-center justify-center gap-4 bg-[#222] p-4 rounded-lg">
-          <h2 className="text-2xl font-bold mb-2">Blossom Dust Token </h2>
+          <h2 className="text-2xl font-bold mb-2">Blossom Pollen Token </h2>
 
           <div className="w-[200px] h-[200px] relative">
             <Image
