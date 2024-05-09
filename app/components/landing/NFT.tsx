@@ -34,7 +34,7 @@ const NFT = () => {
 
         <div className="w-[200px] h-[200px] relative">
           <Image
-            src="/6.png"
+            src="/13.png"
             alt="nft-image"
             fill
             className="drop-shadow-lg rounded-lg"

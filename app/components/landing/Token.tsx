@@ -34,7 +34,7 @@ const Token = () => {
           </div>
 
           <div className="w-full text-left font-bold ">
-            <p className="p-2">Total Supply: 1,000,000</p>
+            <p className="p-2">Total Supply: 100,000,000</p>
             <p className="p-2">Current value: 1 eth - 1000 PBT</p>
           </div>
         </div>
