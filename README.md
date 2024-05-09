@@ -20,5 +20,6 @@ token erc-721: Mainnet:
 
 
 Token ERC-20: TestNet:
-address: 0xfDafC18c6BeF2F153f5D0F14fdF8f0B8edc19b04
+address: 0xfDafC18c6BeF2F153f5D0F14fdF8f0B8edc19b04 // change up
 token erc-20: Mainnet:
+
