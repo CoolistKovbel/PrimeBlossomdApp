@@ -20,7 +20,7 @@ const Hero = () => {
 
       <div className="w-[200px] h-[200px] relative">
         <Image
-          src="/13.png"
+          src="/safelock.png"
           alt="nft-image"
           fill
           className="drop-shadow-lg rounded-lg"
