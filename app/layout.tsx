@@ -5,7 +5,7 @@ import "./globals.css";
 import FooterMain from "./components/footer";
 
 export const metadata: Metadata = {
-  title: "PrimeBlossomVault",
+  title: "PrimeBlossom Vault",
   description: "For people who are burnt out and need a break, wnat to relax but dont know how to express it",
 };
 

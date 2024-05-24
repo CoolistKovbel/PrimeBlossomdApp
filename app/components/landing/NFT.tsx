@@ -20,7 +20,7 @@ const NFT = () => {
     <div className="bg-[#111] p-10 flex items-center justify-center w-full flex-col md:flex-row gap-4">
 
       <div className="w-full md:w-[45%]">
-        <h2 className="text-3xl font-bold mb-2 text-center md:text-left">Prime Blossom Plant</h2>
+        <h2 className="text-3xl font-bold mb-3 text-center md:text-left">Signtature Mint</h2>
         <p className="text-sm">
           This Prime Blossom Plant is a token of 222 other unquie generations.
           If you decide to mint you will be able to earn rewards from staking.
