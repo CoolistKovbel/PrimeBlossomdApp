@@ -11,10 +11,12 @@ const EmailList = () => {
       console.log("joining mailing list ");
 
       const result = await JoinMailingList(e.target.emailUser.value);
+      const form = e.target as HTMLFormElement
 
       if (result.status === "success") {
         console.log("noices");
         toast("you are now on the list");
+        form.reset();
       }
     } catch (error) {
       console.log("error join mailling list", error);

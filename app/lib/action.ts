@@ -1,6 +1,7 @@
 "use server";
 
 import { WaitList } from "../models/WaitList";
+import dbConnect from "./db";
 import { sendMail } from "./mail";
 
 export async function ContactEmail(
@@ -30,6 +31,9 @@ export async function ContactEmail(
 export async function JoinMailingList(userInfo: string) {
   try {
     console.log("trying to join mailing list");
+
+    await dbConnect()
+
 
     const newUserWaiting = new WaitList({
       email: userInfo,
