@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import { inter } from "./components/ui/font";
 
-import "./globals.css";
 import FooterMain from "./components/footer";
+import MainHeader from "./components/main-header";
+import { ToastContainer} from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
+import "./globals.css";
+
 
 export const metadata: Metadata = {
   title: "PrimeBlossom Vault",
@@ -17,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <MainHeader />
         {children}
+        <ToastContainer />
         <FooterMain />
       </body>
     </html>
