@@ -26,6 +26,22 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.hiddenDeBlock {
+  display: none;
+}
+
+
+
+
+@media (min-width:400px) {
+  #main-header nav:first-child {
+    background: #999;
+    display: none;
+  }
+
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
